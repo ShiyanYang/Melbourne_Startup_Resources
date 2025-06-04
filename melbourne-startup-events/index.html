@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melbourne Startup Events</title>
+    <title>2025 Melbourne Startup Resources</title>
+    <meta name="description" content="See Melbourne's Startup World in 10 Seconds">
+    
+
+    
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Google Fonts: Inter, a popular tech font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   
     <style>
         body {
             margin-left: 200px;
@@ -17,8 +24,52 @@
             }
         }
         ul li {
-            margin-bottom: 20px; /* Increase gap between list items */
+            margin-bottom: 15px; /* Increase gap between list items */
         }
+        
+        .event {
+    font-size: 12px; /* or adjust to 0.9rem, 14px, etc. as needed */
+    margin-left: 30px;
+   }
+        .grant {
+    font-size: 12px; /* or adjust to 0.9rem, 14px, etc. as needed */
+    margin-left: 30px;
+   }
+
+    .header-hero {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        max-height:100%;
+        overflow: hidden;
+    }
+    .header-img {
+        width: 100%;
+        height: 100%;
+        max-height:none;
+        object-fit: cover;
+        display: block;
+    }
+    .header-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.25); /* subtle overlay for readability */
+    }
+    .header-title h1 {
+        margin: 0;
+        font-size: 2em;
+        text-shadow: 0 2px 8px #000;
+    }
+
     </style>
 
 
@@ -26,86 +77,83 @@
 
 </head>
 <body>
-    <header>
-        <h1>Victoria Startup Resources</h1>
-        
+    <header class="header-hero">
+        <img src="image/melbourne_skyline.jpg" alt="Melbourne Skyline" class="header-img">
+        <div class="header-title">
+            <h1>Melbourne Startup Resources</h1>
+            <p style="font-size:1.2em; color:#fff; margin-top:10px; text-shadow: 0 2px 8px #000;">
+                Access Melbourne's Startup Ecosystem in 10 Seconds
+            </p>
+        </div>
     </header>
     <main>
-        <section id="Accelerators">
-            <h2>Startup Accelerator</h2>
-            <h3>Government Initiatives</h3>
-            <ul>
-                <li><a href="https://launchvic.org/" target="_blank">LanuchVIC</a>
-                    <br><small>Independent agency established by Victoria government for developing Victoria's startup ecosystem</small></li>
-                <li><a href="https://cremornedigitalhub.com.au/en-au/home" target="_blank">Cremorne Digital Hub</a>
-                    <br><small>$10 million invested from the Victorian Government to drive the growth of Victoria’s tech sector and ecosystem</small></li> 
-            </ul>
-            
-            <h3>University Accelerators</h3>
-            <ul>
-                <li><a href="https://www.themap.co/" target="_blank">Melbourne Accelerator Program (MAP)</a>
-                    <br><small>The Melbourne University's Startup Accelerator</small></li>
-                <li><a href="https://www.monash.edu/entrepreneurship/programs/accelerator" target="_blank">The Accelerator (Monash)</a>
-                    <br><small>RMIT's centre for entrepreneurship</small></li>
-                <li><a href="https://www.rmit.edu.au/partner/hubs/activator" target="_blank">Activator (RMIT)</a>
-                    <br><small>RMIT's centre for entrepreneurship</small></li>
-            </ul> 
 
-            <h3>Private Accelerators</h3>
-                <ul>
-                    <li><a href="https://www.startupgrind.com/melbourne/" target="_blank">Startup Grind (Melbourne)</a></li>
-                    <li><a href="https://www.rocketseeder.com/" target="_blank">Rocket Seeder</a></li>
-                    <li><a href="https://www.skalata.vc/" target="_blank">Skalata Ventures</a></li>
-                    <li><a href="https://boab.ventures/" target="_blank">Boab Ventures</a></li>    
-                </ul>
-            <h3>Startup Community</h3>
-               <ul>
-               <li><a href="https://thestartupnetwork.com.au/" target="_blank">The Startup Network</a></li>
-               </ul>
-        </section>
-        <section id="events">
-            <h2>Startup Events</h2>
-            <ul>
-                <li>
-                    <a href="https://melbournestartupweek.com/" target="_blank">Melbourne Startup Week</a>
-                    <br><small>Location: Melbourne CBD | Time: 10-14 Nov 2025</small>
-                </li>
-                <li>
-                    <a href="https://startupvictoria.com.au/events" target="_blank">Startup Victoria Pitch Night</a>
-                    <br><small>Location: The Cluster, 31 Queen St | Time: 20 June 2025, 6pm</small>
-                </li>
-                <li>
-                    <a href="https://www.techstars.com/events" target="_blank">Techstars Startup Weekend</a>
-                    <br><small>Location: RMIT, Swanston St | Time: 5-7 July 2025</small>
-                </li>
-                <li>
-                    <a href="https://fishburners.org/events" target="_blank">Fishburners Friday Night Pitches</a>
-                    <br><small>Location: Fishburners, Docklands | Time: Every Friday, 5pm</small>
-                </li>
-            </ul>
-        </section>
         <section id="grants">
-            <h2>Startup Grants</h2>
-            <ul>
-                <li><a href="https://launchvic.org/" target="_blank">LaunchVic Funding</a></li>
-                <li><a href="https://www.melbourne.vic.gov.au/business/grants-tenders/pages/small-business-grants.aspx" target="_blank">City of Melbourne Small Business Grants</a></li>
-                <li><a href="https://business.gov.au/grants-and-programs/accelerating-commercialisation" target="_blank">Accelerating Commercialisation Grant</a></li>
-                <li><a href="https://business.vic.gov.au/grants-and-programs" target="_blank">Victorian Government Innovation Grants</a></li>
-            </ul>
+            <h2>Public Grants</h2>
         </section>
+        
+        <section id="events">
+            <h2>Coming Startup Events</h2>
+        </section>
+
+       <section id="Accelerators">
+        <h2>Startup Community</h2>
+            <div class="event">
+                <h3>
+                    <a href="https://www.startupgrind.com/melbourne/" target="_blank">Startup Grind (Melbourne)</a>
+                    <span style="font-weight: normal;"> &mdash; The world's largest startup community. Hosting monthly startup events to teach, inspire, and connect entrepreneurs</span>
+                </h3>
+            </div>
+            <div class="event">
+                <h3>
+                    <a href="https://thestartupnetwork.com.au/" target="_blank">The Startup Network</a>
+                    <span style="font-weight: normal;"> &mdash; Australia's largest startup community.</span>
+                </h3>
+            </div>
+            <div class="event">
+                <h3>
+                    <a href="https://www.stoneandchalk.com.au/" target="_blank">Stone & Chalk</a>
+                    <span style="font-weight: normal;"> &mdash; The largest innovation community in Australia.</span>
+                </h3>
+            </div>
+            <div class="event">
+                <h3>
+                    <a href="https://www.mlai.au/" target="_blank">mlai</a>
+                    <span style="font-weight: normal;"> &mdash; An AU non-profit org dedicated to making Australia an awesome home for AI builders.</span>
+                </h3>
+            </div>
+        </section>
+        
+        
+        
         <section id="database">
-            <h2>Startup Database</h2>
-            <ul>
-                <li><a href="https://www.crunchbase.com/hub/melbourne-startups" target="_blank">Crunchbase Melbourne Startups</a></li>
-                <li><a href="https://startupvictoria.com.au/directory" target="_blank">Startup Victoria Directory</a></li>
-                <li><a href="https://angel.co/location/melbourne" target="_blank">AngelList Melbourne</a></li>
-                <li><a href="https://australianstartups.com/" target="_blank">Australian Startups Database</a></li>
-            </ul>
-        </section>
+        <h2>Startup Database</h2>
+            <div class="event">
+                <h3>
+                    <a href="https://launchvic.org/startup-database" target="_blank">Victorian Startup Database & Directory</a>
+                    <span style="font-weight: normal;"> &mdash; Dealroom Victoria is a free dedicated source of real-time data for startup founders, investors, corporates and policy makers</span>
+                </h3>
+            </div>
+            <div class="event">
+                <h3>
+                    <a href="https://www.startupblink.com/startup-ecosystem/melbourne-au?page=1" target="_blank">StartupBlink (MELBOURNE)</a>
+                    <span style="font-weight: normal;"> &mdash; StartupBlink is a global innovation economy research platform</span>
+                </h3>
+            </div>
+            <div class="event">
+                <h3>
+                    <a href="https://www.crunchbase.com/hub/melbourne-startups" target="_blank">Crunchbase (Melbourne)</a>
+                    <span style="font-weight: normal;"> &mdash; Crunchbase is a platform that displays private company activities</span>
+                </h3>
+            </div>
+    </section>
+    
     </main>
     <footer>
-        <p>&copy; 2025 Melbourne Startup Events. All rights reserved.</p>
+        <p>&copy; 2025 Melbourne Startup Resources. All rights reserved.</p>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/grants.js"></script>
+    <script src="js/accelerators.js"></script>
 </body>
 </html>
