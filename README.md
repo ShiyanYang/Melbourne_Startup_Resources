@@ -1,2 +1,2 @@
 # Melbourne_Startup_Resources
-Understand startup resources in Melbourne in 1 min
+The webpage helps you to access Melbourne's startup ecosystem in 10 seconds
