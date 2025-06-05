@@ -10,9 +10,10 @@
     
     <link rel="stylesheet" href="css/styles.css">
     <!-- Add Google Fonts: Inter, a popular tech font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
    
     <style>
+       
         body {
             margin-left: 200px;
             margin-right: 200px;
@@ -25,6 +26,10 @@
         }
         ul li {
             margin-bottom: 15px; /* Increase gap between list items */
+        }
+
+    body, .event, .grant, .header-title, h1, h2, h3, h4, h5, h6, p, a {
+              font-family: 'Inter', Arial, Helvetica, sans-serif;
         }
         
         .event {
@@ -70,6 +75,28 @@
         text-shadow: 0 2px 8px #000;
     }
 
+    .funding-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 8px;
+    }
+    .funding-col.domain {
+        min-width: 220px;
+        max-width: 300px;
+        flex: 1 1 220px;
+    }
+    .funding-col.amount {
+        min-width: 160px;
+        max-width: 200px;
+        flex: 1 1 160px;
+    }
+    .funding-col.equity {
+        min-width: 140px;
+        max-width: 180px;
+        flex: 1 1 140px;
+    }
+
     </style>
 
 
@@ -88,9 +115,6 @@
     </header>
     <main>
 
-        <section id="grants">
-            <h2>Public Grants</h2>
-        </section>
         
         <section id="events">
             <h2>Coming Startup Events</h2>
@@ -153,7 +177,6 @@
         <p>&copy; 2025 Melbourne Startup Resources. All rights reserved.</p>
     </footer>
     <script src="js/events.js"></script>
-    <script src="js/grants.js"></script>
-    <script src="js/accelerators.js"></script>
+    <script src="js/funding.js"></script>
 </body>
 </html>

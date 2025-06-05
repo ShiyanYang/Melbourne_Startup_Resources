@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html += `
             <div class="event">
                 <h3>
-                    <a href="${event.link}" target="_blank">${event.title}</a>
+                    <a href="${event.link}" target="_blank" rel="noopener noreferrer">${event.title}</a>
                     ${event.description ? `<span style="font-weight: normal;"> &mdash; ${event.description}</span>` : ''}
                 </h3>
                 <p>
