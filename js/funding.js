@@ -18,40 +18,46 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'LaunchVIC',
             link: 'https://launchvic.org/',
-            description: "Victoria's startup agency supporting founders and investors.",
+            description: "Victoria's independent startup agency supporting founders and investors",
+            category:'Government Agency',
             domain: 'General Tech, Ecosystem Support',
-            stage: 'Pre-seed, Seed',
-            equity: 'No (grants, programs)'
+            amount: 'Grants for startups, programs, and investors',
+            equity: 'No Equity (through CivVic Lab)'
         },
         {
             name: 'Cremorne Digital Hub',
             link: 'https://cremornedigitalhub.com.au/en-au/home',
-            description: "A Victorian Government initiative to grow the tech sector.",
+            description: "A Victorian Government initiative to grow the tech sector",
+            category:'Government Agency',
             domain: 'Digital, Tech, Innovation',
-            stage: 'Pre-seed, Seed',
-            equity: 'No (hub, programs)'
+            amount: 'Funding N/A',
+            equity: 'No equity'
         },
         {
             name: 'CSIRO Kick-Start',
             link: 'https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/about',
-            description: 'Supports Aussie startups and small business with CSIRO funding and research access.',
-            amount: 'Matching funding of $10,000 to $50,000',
-            status: 'Open'
+            description: 'Innovate Australian startups and small businesses with CSIRO funding and research access',
+            category:'Government Agency',
+            domain: 'General R&D',
+            amount: '$10,000 to $50,000 matching funding',
+            equity: 'No equity'
         },
         {
             name: 'Melbourne Accelerator Program (MAP)',
             link: 'https://www.themap.co/',
-            description: "The University of Melbourne's startup accelerator.",
+            description: "The University of Melbourne's startup accelerator",
+            category:'University Accelerator',
             domain: 'General Tech, University Startups',
-            stage: 'Pre-Seed, Seed',
+            amount: '$120,000 in funding',
             equity: 'No'
         },
         {
             name: 'Rocket Seeder',
             link: 'https://www.rocketseeder.com/',
             description: "Supports early-stage startups aligned to the UN's SDGs.",
+            category:'Venture Capital',
             domain: 'Agri-food, Sustainability',
-            stage: 'Pre-seed, Seed',
+            amount: '$120,000 in funding',
             equity: 'No'
         }
     ];
@@ -61,40 +67,45 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Techstars Melbourne',
             link: 'https://www.techstars.com/accelerators/melbourne',
             description: "Part of the global Techstars network, supporting startups in Melbourne.",
+            category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
-            stage: 'Pre-Seed, Seed',
+            amount: '$120,000 in funding',
             equity: 'Equity taken'
         },
         {
             name: 'Skalata Ventures',
             link: 'https://www.skalata.vc/',
             description: "Invests in and supports early-stage Australian startups.",
+            category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
-            stage: 'Seed, Series A',
+            amount: '$120,000 in funding',
             equity: 'Equity taken'
         },
         {
             name: 'Boab Ventures',
             link: 'https://boab.ventures/',
             description: "A subsidiary of Artesian Venture Partners, focusing on deeptech.",
+            category:'Venture Capital',
             domain: 'AI, Deeptech',
-            stage: 'Seed, Series A',
+            amount: '$120,000 in funding',
             equity: 'Equity taken'
         },
         {
             name: 'Antler',
             link: 'https://www.antler.co/residency/australia',
             description: "Global startup generator and early-stage venture capital firm.",
+            category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
-            stage: 'Pre-seed, Seed, Series A',
+            amount: '$120,000 in funding',
             equity: 'Equity taken'
         },
         {
             name: 'Startmate',
             link: 'https://startmate.com/',
             description: "A leading Australian accelerator supporting startups across various sectors.",
+            category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
-            stage: 'Seed, Series A',
+            amount: '$120,000 in funding',
             equity: 'Equity taken'
         }
     ];
@@ -105,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Business Victoria Grants and Programs',
             link: 'https://business.vic.gov.au/grants-and-programs?filter=%7B%22status%22%3A%5B%22opening+soon%22%2C%22open%22%2C%22ongoing%22%5D%7D&page=1',
             description: 'Find various grants and programs to support Victorian businesses',
+            category:'Government Grant',
             amount: 'Varies',
             status:'Open'
         },
@@ -112,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Victorian Government Grants and Programs',
             link: 'https://www.vic.gov.au/grants-and-programs',
             description: 'Supports businesses in Victoria',
+            category:'Government Grant',
             amount: 'Varies',
             status:'Open'
         },
@@ -119,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Research and Development Tax Incentive',
             link: 'https://www.industry.gov.au/science-technology-and-innovation/industry-innovation/research-and-development-tax-incentive',
             description: 'Encouraging Australian businesses to invest in research and development',
+            category:'Government Grant',
             amount: 'Varies',
             status:'Open'
         }
@@ -130,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Helper function to render a section
     function renderSection(title, arr) {
         let sectionHtml = `<h3>${title}</h3>`;
+     
         arr.forEach(item => {
             sectionHtml += `
                 <div class="event">
@@ -138,9 +153,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span style="font-weight: normal;"> &mdash; ${item.description}</span>
                     </h4>
                     <div class="funding-row">
-                        <div class="funding-col domain"><strong>Domain:</strong> ${item.domain ? item.domain : '-'}</div>
-                        <div class="funding-col amount"><strong>Amount:</strong> ${item.amount ? item.amount : '-'}</div>
-                        <div class="funding-col equity"><strong>Equity:</strong> ${item.equity ? item.equity : '-'}</div>
+                        <div class="funding-col category">${item.category ? item.category : '-'}</div>
+                        <div class="funding-col domain">${item.domain ? item.domain : '-'}</div>
+                        <div class="funding-col amount">${item.amount ? item.amount : '-'}</div>
+                        <div class="funding-col equity">${item.equity ? item.equity : '-'}</div>
                     </div>
                 </div>
             `;
