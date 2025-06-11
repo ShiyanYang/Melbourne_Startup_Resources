@@ -7,109 +7,10 @@
     <meta name="description" content="See Melbourne's Startup World in 10 Seconds">
     
 
-    
     <link rel="stylesheet" href="css/styles.css">
     <!-- Add Google Fonts: Inter, a popular tech font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-   
-    <style>
-       
-        body {
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-        @media (max-width: 600px) {
-            body {
-                margin-left: 200px;
-                margin-right: 200px;
-            }
-        }
-        ul li {
-            margin-bottom: 15px; /* Increase gap between list items */
-        }
-
-    body, .event, .grant, .header-title, h1, h2, h3, h4, h5, h6, p, a {
-              font-family: 'Inter', Arial, Helvetica, sans-serif;
-        }
-        
-        .event {
-    font-size: 12px; /* or adjust to 0.9rem, 14px, etc. as needed */
-    margin-left: 30px;
-   }
-        .grant {
-    font-size: 12px; /* or adjust to 0.9rem, 14px, etc. as needed */
-    margin-left: 30px;
-   }
-
-    .header-hero {
-        position: relative;
-        width: 100%;
-        height: 350px;
-        max-height:100%;
-        overflow: hidden;
-    }
-    .header-img {
-        width: 100%;
-        height: 100%;
-        max-height:none;
-        object-fit: cover;
-        display: block;
-    }
-    .header-title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0,0,0,0.25); /* subtle overlay for readability */
-    }
-    .header-title h1 {
-        margin: 0;
-        font-size: 2em;
-        text-shadow: 0 2px 8px #000;
-    }
-
-    .funding-row {
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    margin-bottom: 8px;
-    }
-    .funding-col.category {
-    min-width: 160px;
-    max-width: 200px;
-    flex: 1 1 200px;
-    }
-    .funding-col.domain {
-        min-width: 220px;
-        max-width: 300px;
-        flex: 1 1 220px;
-    }
-    .funding-col.amount {
-        min-width: 160px;
-        max-width: 300px;
-        flex: 1 1 220px;
-    }
-    .funding-col.equity {
-        min-width: 140px;
-        max-width: 300px;
-        flex: 1 1 140px;
-    }
-
-    a {
-    text-decoration: none;
-    }
-
-    </style>
-
-
-
+      
 
 </head>
 <body>
@@ -124,7 +25,7 @@
     </header>
     <main>
 
-        
+       <section id="funding-section"></section>
         <section id="events">
             <h2>Coming Startup Events</h2>
         </section>
@@ -185,7 +86,7 @@
     <footer>
         <p>&copy; 2025 Melbourne Startup Resources. All rights reserved.</p>
     </footer>
-    <script src="js/events.js"></script>
-    <script src="js/funding.js"></script>
+<script src="js/events.js"></script>
+<script src="js/funding.js"></script>
 </body>
 </html>

@@ -6,12 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create or select the container
     let container = document.getElementById('funding-section');
-    if (!container) {
-        container = document.createElement('div');
-        container.id = 'funding-section';
-        container.style.width = '100%';
-        main.insertBefore(container, main.firstChild);
-    }
+  
 
     // --- Data Arrays ---
     const funding_seed = [
@@ -47,39 +42,40 @@ document.addEventListener('DOMContentLoaded', function() {
             link: 'https://www.themap.co/',
             description: "The University of Melbourne's startup accelerator",
             category:'University Accelerator',
-            domain: 'General Tech, University Startups',
-            amount: '$120,000 in funding',
-            equity: 'No'
+            domain: 'General Industry',
+            amount: '$20,000 equity-free funding',
+            equity: '300m+ investment raised',
+            application: "https://www.themap.co/apply"
         },
         {
             name: 'Rocket Seeder',
             link: 'https://www.rocketseeder.com/',
-            description: "Supports early-stage startups aligned to the UN's SDGs.",
+            description: "Supports early-stage startups aligned to the UN's SDGs",
             category:'Venture Capital',
-            domain: 'Agri-food, Sustainability',
-            amount: '$120,000 in funding',
-            equity: 'No'
+            domain: 'AgTech',
+            amount: '$Undisclosed',
+            equity: 'US$60k'
         }
     ];
 
     const funding_seed_to_A = [
         {
-            name: 'Techstars Melbourne',
-            link: 'https://www.techstars.com/accelerators/melbourne',
-            description: "Part of the global Techstars network, supporting startups in Melbourne.",
+            name: 'Startmate',
+            link: 'https://startmate.com/',
+            description: "A leading Australian accelerator supporting startups across various sectors",
             category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
-            amount: '$120,000 in funding',
-            equity: 'Equity taken'
+            amount: '$25,000 matching funding',
+            equity: '3.5b profilo value'
         },
         {
             name: 'Skalata Ventures',
             link: 'https://www.skalata.vc/',
-            description: "Invests in and supports early-stage Australian startups.",
+            description: "Invests in and supports early-stage Australian startups",
             category:'Venture Capital',
-            domain: 'General Tech, B2B, B2C',
-            amount: '$120,000 in funding',
-            equity: 'Equity taken'
+            domain: 'General Industry',
+            amount: 'Up to $300,000',
+            equity: ''
         },
         {
             name: 'Boab Ventures',
@@ -87,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "A subsidiary of Artesian Venture Partners, focusing on deeptech.",
             category:'Venture Capital',
             domain: 'AI, Deeptech',
-            amount: '$120,000 in funding',
-            equity: 'Equity taken'
+            amount: '$Undisclosed',
+            equity: 'AUM 1b'
         },
         {
             name: 'Antler',
@@ -98,16 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
             domain: 'General Tech, B2B, B2C',
             amount: '$120,000 in funding',
             equity: 'Equity taken'
-        },
-        {
-            name: 'Startmate',
-            link: 'https://startmate.com/',
-            description: "A leading Australian accelerator supporting startups across various sectors.",
-            category:'Venture Capital',
-            domain: 'General Tech, B2B, B2C',
-            amount: '$120,000 in funding',
-            equity: 'Equity taken'
         }
+
     ];
 
     const others = [
@@ -157,8 +145,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="funding-col domain">${item.domain ? item.domain : '-'}</div>
                         <div class="funding-col amount">${item.amount ? item.amount : '-'}</div>
                         <div class="funding-col equity">${item.equity ? item.equity : '-'}</div>
+                        </div>
                     </div>
-                </div>
             `;
         });
         return sectionHtml;
