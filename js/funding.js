@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Government Agency',
             domain: 'General Tech, Ecosystem Support',
             amount: 'Grants for startups, programs, and investors',
-            equity: 'No Equity (through CivVic Lab)'
+            metric: 'No Equity (through CivVic Lab)'
         },
         {
             name: 'Cremorne Digital Hub',
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Government Agency',
             domain: 'Digital, Tech, Innovation',
             amount: 'Funding N/A',
-            equity: 'No equity'
+            metric: 'No equity'
         },
         {
             name: 'CSIRO Kick-Start',
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Government Agency',
             domain: 'General R&D',
             amount: '$10,000 to $50,000 matching funding',
-            equity: 'No equity'
+            metric: 'No equity'
         },
         {
             name: 'Melbourne Accelerator Program (MAP)',
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'University Accelerator',
             domain: 'General Industry',
             amount: '$20,000 equity-free funding',
-            equity: '300m+ investment raised',
+            metric: '300m+ investment raised',
             application: "https://www.themap.co/apply"
         },
         {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Venture Capital',
             domain: 'AgTech',
             amount: '$Undisclosed',
-            equity: 'US$60k'
+            metric: 'US$60k'
         }
     ];
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
             amount: '$25,000 matching funding',
-            equity: '3.5b profilo value'
+            metric: '3.5b profilo value'
         },
         {
             name: 'Skalata Ventures',
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Venture Capital',
             domain: 'General Industry',
             amount: 'Up to $300,000',
-            equity: ''
+            metric: ''
         },
         {
             name: 'Boab Ventures',
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Venture Capital',
             domain: 'AI, Deeptech',
             amount: '$Undisclosed',
-            equity: 'AUM 1b'
+            metric: 'AUM 1b'
         },
         {
             name: 'Antler',
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
             amount: '$120,000 in funding',
-            equity: 'Equity taken'
+            metric: 'Equity taken'
         }
 
     ];
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="funding-col category">${item.category ? item.category : '-'}</div>
                         <div class="funding-col domain">${item.domain ? item.domain : '-'}</div>
                         <div class="funding-col amount">${item.amount ? item.amount : '-'}</div>
-                        <div class="funding-col equity">${item.equity ? item.equity : '-'}</div>
+                        <div class="funding-col metric">${item.metric ? item.metric : '-'}</div>
                         </div>
                     </div>
             `;

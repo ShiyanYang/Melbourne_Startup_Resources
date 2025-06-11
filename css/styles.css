@@ -100,14 +100,6 @@ h1 {
         text-shadow: 0 2px 8px #000;
     }
 
-.funding-row {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
-    align-items: center;
-}
-
-
 
 .funding-row {
 display: flex;
@@ -130,7 +122,8 @@ flex: 1 1 200px;
     max-width: 300px;
     flex: 1 1 220px;
 }
-.funding-col.equity {
+
+.funding-col.metric {
     min-width: 140px;
     max-width: 300px;
     flex: 1 1 140px;
