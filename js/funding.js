@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
             link: 'https://launchvic.org/',
             description: "Victoria's independent startup agency supporting founders and investors",
             category:'Government Agency',
-            domain: 'General Tech, Ecosystem Support',
-            amount: 'Grants for startups, programs, and investors',
-            metric: 'No Equity (through CivVic Lab)'
+            domain: 'General Industry, Ecosystem Support',
+            amount: 'Up to $50,000 equity-free funding and other blended capital',
+            grant_link: 'https://launchvic.org/grants/#open',
+            metric: '30+ programs for founders',
+            metric_link: 'https://launchvic.org/programs/?program_category=for-founders'
         },
         {
             name: 'Cremorne Digital Hub',
@@ -25,17 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "A Victorian Government initiative to grow the tech sector",
             category:'Government Agency',
             domain: 'Digital, Tech, Innovation',
-            amount: 'Funding N/A',
+            amount: 'Funding unknown',
             metric: 'No equity'
         },
         {
-            name: 'CSIRO Kick-Start',
+            name: 'CSIRO Program for SME',
             link: 'https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/about',
             description: 'Innovate Australian startups and small businesses with CSIRO funding and research access',
             category:'Government Agency',
             domain: 'General R&D',
-            amount: '$10,000 to $50,000 matching funding',
-            metric: 'No equity'
+            amount: 'CSIRO Kick-Start: $10,000 to $50,000 matching funding',
+            grant_link: 'https://www.csiro.au/en/work-with-us/funding-programs/SME/CSIRO-Kick-Start/about',
+            metric: 'Innovate to Grow (free 8-week online program)',
+            metric_link: 'https://www.csiro.au/en/work-with-us/funding-programs/SME/Innovate-to-Grow'
         },
         {
             name: 'Melbourne Accelerator Program (MAP)',
@@ -44,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             category:'University Accelerator',
             domain: 'General Industry',
             amount: '$20,000 equity-free funding',
-            metric: '300m+ investment raised',
-            application: "https://www.themap.co/apply"
+            metric: 'Book office hours for founders',
+            metric_link: "https://www.themap.co/apply"
         },
         {
             name: 'Rocket Seeder',
@@ -143,8 +147,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="funding-row">
                         <div class="funding-col category">${item.category ? item.category : '-'}</div>
                         <div class="funding-col domain">${item.domain ? item.domain : '-'}</div>
-                        <div class="funding-col amount">${item.amount ? item.amount : '-'}</div>
-                        <div class="funding-col metric">${item.metric ? item.metric : '-'}</div>
+                        <div class="funding-col amount">
+                            ${item.grant_link 
+                                ? `<a href="${item.grant_link}" target="_blank" rel="noopener noreferrer">${item.amount ? item.amount : '-'}</a>`
+                                : (item.amount ? item.amount : '-')
+                            }
+                        </div>
+                        
+                        <div class="funding-col metric">
+                            ${item.metric_link 
+                                ? `<a href="${item.metric_link}" target="_blank" rel="noopener noreferrer">${item.metric ? item.metric : '-'}</a>`
+                                : (item.metric ? item.metric : '-')
+                            }
+                        </div>
                         </div>
                     </div>
             `;
