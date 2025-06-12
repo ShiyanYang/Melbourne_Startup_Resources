@@ -57,8 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Supports early-stage startups aligned to the UN's SDGs",
             category:'Venture Capital',
             domain: 'AgTech',
-            amount: '$Undisclosed',
-            metric: 'US$60k'
+            amount: 'Funding unknown',
+            metric: 'AgTech Seeds Program',
+            metric_link: "https://www.rocketseeder.com/agtechseeds"
         }
     ];
 
