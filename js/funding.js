@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             domain: 'Digital, Tech, Innovation',
             amount: 'Funding unknown',
             metric: 'No equity'
+            
         },
         {
             name: 'CSIRO Program for SME',
@@ -51,6 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
             metric: 'Book office hours for founders',
             metric_link: "https://www.themap.co/apply"
         },
+         {
+            name: 'Skalata Ventures',
+            link: 'https://www.skalata.vc/',
+            description: "Help pre-seed founders build the capabilities for long term success",
+            category:'Venture Capital',
+            domain: 'General Industry',
+            amount: 'Up to $300,000, with $500k+$1m+$2m follow-on',
+            amount_link: 'https://www.skalata.vc/founders/get-investment',
+            metric: 'Founder application',
+            metric_link: 'https://www.skalata.vc/contact'
+        },
         {
             name: 'Rocket Seeder',
             link: 'https://www.rocketseeder.com/',
@@ -67,67 +79,85 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Startmate',
             link: 'https://startmate.com/',
-            description: "A leading Australian accelerator supporting startups across various sectors",
+            description: "A leading Australian accelerator investing 230+ startups across various sectors",
             category:'Venture Capital',
             domain: 'General Tech, B2B, B2C',
-            amount: '$25,000 matching funding',
-            metric: '3.5b profilo value'
-        },
-        {
-            name: 'Skalata Ventures',
-            link: 'https://www.skalata.vc/',
-            description: "Invests in and supports early-stage Australian startups",
-            category:'Venture Capital',
-            domain: 'General Industry',
-            amount: 'Up to $300,000',
-            metric: ''
-        },
-        {
-            name: 'Boab Ventures',
-            link: 'https://boab.ventures/',
-            description: "A subsidiary of Artesian Venture Partners, focusing on deeptech.",
-            category:'Venture Capital',
-            domain: 'AI, Deeptech',
-            amount: '$Undisclosed',
-            metric: 'AUM 1b'
+            amount: '$25,000, with possible $50,000 - $100,000 follow-on',
+            amount_link: 'https://www.startmate.com/spark-fund',
+            metric: '2026 Startmate Accelerator Program Register (12 weeks)',
+            metric_link: 'https://www.startmate.com/accelerator?utm_source=website&utm_medium=link&utm_campaign=AccW25-website_navigation&utm_content=homepage_hero'
         },
         {
             name: 'Antler',
             link: 'https://www.antler.co/residency/australia',
-            description: "Global startup generator and early-stage venture capital firm.",
+            description: "Global startup generator and early-stage venture capital firm",
             category:'Venture Capital',
-            domain: 'General Tech, B2B, B2C',
-            amount: '$120,000 in funding',
-            metric: 'Equity taken'
-        }
+            domain: 'General Industry',
+            amount: '$260,000 pre-Seed funding (12% equity stake, $75,000 platform fee)',
+            metric: '10-week rediency program',
+            metric_link: 'https://www.antler.co/apply#location'
+        },
+       
+        {
+            name: 'Boab Ventures',
+            link: 'https://boab.ventures/',
+            description: "A subsidiary of Artesian Venture Partners, focusing on deeptech startups",
+            category:'Venture Capital',
+            domain: 'Deeptech',
+            amount: '$300,000-$1.6m in first round, with up to $3m follow-on',
+            metric: 'Open programs for application',
+            metric_link: 'https://boab.ventures/apply/'
+        },
+        
+        {
+            name: 'Stone & Chalk',
+            link: 'https://www.stoneandchalk.com.au/',
+            description: "The largest innovation community in Australia, supporting startups and scaleups",
+            category:'Innovation Hub',
+            domain: 'General Industry',
+            amount: '$1b capital raised by residents and alumni',
+            metric: 'Join residency program',
+            metric_link: 'https://www.stoneandchalk.com.au/membership'
+        },
 
     ];
 
     const others = [
-        
         {
-            name: 'Business Victoria Grants and Programs',
-            link: 'https://business.vic.gov.au/grants-and-programs?filter=%7B%22status%22%3A%5B%22opening+soon%22%2C%22open%22%2C%22ongoing%22%5D%7D&page=1',
-            description: 'Find various grants and programs to support Victorian businesses',
+            name: 'Australian Government Grants',
+            link: 'https://help.grants.gov.au//getting-started-with-grantconnect/information-made-easy/current-opportunities/',
+            description: 'Grants to support Australia’s jobs, growth and innovation',
             category:'Government Grant',
-            amount: 'Varies',
-            status:'Open'
+            domain: 'General Industry',
+            amount: 'Varies'
         },
+
         {
             name: 'Victorian Government Grants and Programs',
             link: 'https://www.vic.gov.au/grants-and-programs',
             description: 'Supports businesses in Victoria',
             category:'Government Grant',
-            amount: 'Varies',
-            status:'Open'
+            domain: 'General Industry',
+            amount: '$ varies'
+            
         },
+
+        {
+            name: 'Business Victoria Grants and Programs',
+            link: 'https://business.vic.gov.au/grants-and-programs?filter=%7B%22status%22%3A%5B%22opening+soon%22%2C%22open%22%2C%22ongoing%22%5D%7D&page=1',
+            description: 'Find various grants and programs to support Victorian businesses',
+            category:'Government Grant',
+            domain: 'General Industry',
+            amount: '$ varies'
+        },
+  
         {
             name: 'Research and Development Tax Incentive',
             link: 'https://www.industry.gov.au/science-technology-and-innovation/industry-innovation/research-and-development-tax-incentive',
             description: 'Encouraging Australian businesses to invest in research and development',
             category:'Government Grant',
-            amount: 'Varies',
-            status:'Open'
+            domain: 'General Industry',
+            amount: '$ varies'
         }
     ];
 
