@@ -86,7 +86,6 @@ h1 {
 .event:last-child {
     border-bottom: none;
 }
-
 .event h2 {
     margin: 0;
     font-size: 1.5em;
@@ -95,6 +94,7 @@ h1 {
 .event p {
     margin: 5px 0;
 }
+
 
 .grant {
     font-size: 12px; /* or adjust to 0.9rem, 14px, etc. as needed */
@@ -143,6 +143,10 @@ display: flex;
 flex-direction: row;
 gap: 0;
 margin-bottom: 8px;
+}
+.funding-col {
+    font-size: 1em; /* or 16px, match your main content */
+    line-height: 1.5;
 }
 .funding-col.category {
 min-width: 160px;
