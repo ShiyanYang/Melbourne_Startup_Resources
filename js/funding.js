@@ -139,45 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ];
 
-    const others = [
-        {
-            name: 'Australian Government Current Grant Opportunities',
-            link: 'https://help.grants.gov.au//getting-started-with-grantconnect/information-made-easy/current-opportunities/',
-            description: 'Grants to support Australia’s jobs, growth and innovation across various sectors',
-            category:'Government Grant',
-            domain: 'Various sectors',
-            amount: '$ varies',
-            metrics: ''
-        },
 
-        {
-            name: 'Victorian Government Grants and Programs',
-            link: 'https://www.vic.gov.au/grants-and-programs',
-            description: 'Supports wellbeing in Victoria',
-            category:'Government Grant',
-            domain: 'Various sectors',
-            amount: '$ varies'
-            
-        },
-
-        {
-            name: 'Business Victoria Grants and Programs',
-            link: 'https://business.vic.gov.au/grants-and-programs?filter=%7B%22status%22%3A%5B%22opening+soon%22%2C%22open%22%2C%22ongoing%22%5D%7D&page=1',
-            description: 'Find various grants and programs to support Victorian businesses',
-            category:'Government Grant',
-            domain: 'Various industries',
-            amount: '$ varies'
-        },
-  
-        {
-            name: 'Research and Development Tax Incentive',
-            link: 'https://www.industry.gov.au/science-technology-and-innovation/industry-innovation/research-and-development-tax-incentive',
-            description: 'Encouraging Australian businesses to invest in research and development',
-            category:'Government Incentive',
-            domain: 'Various industries',
-            amount: '$ varies'
-        }
-    ];
 
     // --- Render Section ---
     let html = `<h2>Funding</h2>`;
@@ -217,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     html += renderSection('Government-Supported Programs and Accelerators', funding_seed);
     html += renderSection('Venture Capitals', funding_seed_to_A);
-    html += renderSection('Other Government Grants', others);
+    
 
     container.innerHTML = html;
 });
